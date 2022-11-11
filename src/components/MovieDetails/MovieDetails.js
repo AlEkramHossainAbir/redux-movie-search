@@ -1,6 +1,6 @@
-import React, {Components} from 'react'
+import React, {Component} from 'react'
 
-export default class MovieDetails extends Components{
+export default class MovieDetails extends Component{
     render(){
         return(
             <div>MovieDetails</div>
