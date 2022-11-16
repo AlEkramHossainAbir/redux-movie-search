@@ -8,6 +8,13 @@ const movieSlice = createSlice({
     name:"abir",
     initialState,
     reducers:{
-        //actions
+        addMovies:(state,{payload})=>{
+            state.movies = payload;
+
+        }
     }
 })
+
+export const {addMovies} = movieSlice.actions
+export const getAllMovies = (state) => state.movies.movies
+export default movieSlice.reducer
